@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<style>
+    *{ 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+/* some variables */
+/* :root{
+
+} */
+img{
+    width: 100%;
+}
+header{
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    justify-content: space-between;
+    box-shadow: 0 8px 11px rgb(14, 55, 54/15%);
+    padding: 20px 100px;
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.profile span{
+    font-size: 13px;
+    font-weight: 500;
+}
+.logo{
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a2428;
+    column-gap: 0.5rem;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    column-gap: 0.5rem;
+    list-style: none;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1a2428;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background: #3cb815;
+    border-radius: 5rem;
+    color: beige;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.btn{
+    padding: 0.6rem 1rem;
+    background: #3cb815;
+    color: #e9f4e3;
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 00.5rem;
+    max-width: 160px;
+ }
+</style>
+<body>
+    
+    <div class="header">
+        <header>
+        <a href="#" class="logo"><i class="fa-sharp fa-solid fa-basket-shopping"></i>Food Market</a>
+ 
+        <div class="bx bx-menu" id="menu-icon"><i class="fa-sharp fa-solid fa-bars"></i></div>
+    <!-- navlist -->
+     <ul class="navbar">
+       <li><a href="#home" class="home active">Home</a></li>
+       <li><a href="#categories">Categories</a></li>
+       <li><a href="#Products">Products</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#customers">Customers</a></li>
+     </ul>
+     <div class="profile">
+        <img src="img/profile.jpg" alt="#">
+        <span>Sahib Singh</span>
+        <i class="fa-sharp fa-solid fa-caret-down"></i>
+
+     </div>
+     </header>
+    </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/home1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/home2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/home3.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <a href="#" class="btn">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
